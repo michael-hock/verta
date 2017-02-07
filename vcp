@@ -1,0 +1,8 @@
+#!/bin/sh
+tar -xf veracrypt-1.19-setup.tar.bz2 veracrypt-1.19-setup-gui-x86
+./veracrypt-1.19-setup-gui-x86
+mv /tmp/veracrypt_1.19_i386.tar.gz ./veracrypt_1.19_i386.tar.gz
+tar -xf veracrypt_1.19_i386.tar.gz usr/bin/veracrypt
+mv usr/bin/veracrypt veracrypt32
+rm -r usr
+rm -f veracrypt-1.19-setup-gui-x86 veracrypt_1.19_i386.tar.gz
